@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Driver</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="driver.js" defer></script>
+  </head>
+  <body>
+    <div id="login">
+      <h1>Driver Login</h1>
+      <input type="text" id="driver-name" placeholder="Enter your name" />
+      <button id="login-btn">Login</button>
+    </div>
+
+    <div id="vehicle-selection" style="display: none">
+      <h1>Select Vehicle</h1>
+      <select id="vehicle-select">
+        <option value="ABC123">ABC123</option>
+        <option value="XYZ456">XYZ456</option>
+        <option value="LMN789">LMN789</option>
+      </select>
+      <button id="next-btn">Next</button>
+    </div>
+
+    <div id="trip-info" style="display: none">
+      <h1>Trip Information</h1>
+      <button id="activate-btn">Activate</button>
+      <button id="deactivate-btn">Deactivate</button>
+    </div>
+
+    <div id="new-trip" style="display: none">
+      <h1>New Trip</h1>
+      <p id="trip-details"></p>
+    </div>
+  </body>
+</html>
